@@ -1,0 +1,77 @@
+.header {    
+    position: fixed;
+    width: 100%;
+    z-index: 1029;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    padding-top: 65px;  
+    
+    &_front {
+        background: $gradient,
+        url(../images/Vector.svg);
+    }
+
+    &__title {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        line-height: 1;
+    }
+
+    &__sub {
+        font-size: 70%;
+        font-weight: 300;
+    }
+
+    &__btn {
+        -webkit-appearance: none;
+        color: $c-brand-1-contrast;
+
+        &:hover {
+            color: $c-brand-1-contrast;
+            text-decoration: none;
+
+            span {
+                background: darken($c-brand-1, 15%);
+            }
+        }
+
+        span {
+            font-size: 24px;
+            background: darken($c-brand-1, 5%);
+            padding-top: 3px;
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    &__action {
+        position: absolute;
+        width: 52px;
+        height: 52px;
+        right: 20px;
+        bottom: -21px;
+        border: 2px solid $c-twitter;
+        border-radius: 50%;
+        color: #fff;
+        background: $c-twitter;
+       outline: none;
+        box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+        font-size: 30px;
+
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #cdcdcd;
+}
